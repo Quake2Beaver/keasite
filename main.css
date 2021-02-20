@@ -1,0 +1,127 @@
+
+body{
+    background-color: rgb(26, 25, 25)
+}
+
+
+.container /* Main Div that wraps around the entire site ( rest of the divs )  */
+{
+    display: flex;
+    margin-top: -16px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 50px auto 400px;
+    grid-template-columns: 1300px;
+}
+
+.topnav /* This is the Div container for the top Navigation bar */
+{
+    background: rgb(144,143,150);
+    border: 2px solid rgb(44, 42, 42);
+background: linear-gradient(180deg, rgba(144,143,150,1) 0%, rgba(61,61,64,1) 48%, rgba(52,60,61,1) 100%);
+z-index: 4;
+}
+
+.topnav ul /* Top navmenu Unordered List Master Settings */
+{
+    
+list-style-type: none; /* When applied to parent element, it removes bullet list from children list items aka <li>'s as in the menu buttons.*/
+z-index: 4;
+}
+
+.topnav ul li /* Top nav list item master settings */
+{
+ display: flex;
+ float: left;
+ justify-content: space-evenly;
+   line-height: 20px;
+ 
+    color: white;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    z-index: 4;
+   
+}
+
+.topnav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    z-index: 4;
+}
+
+
+.topnav ul li a:hover
+{
+    color: orangered;
+    text-shadow: 2px 7px 4px  black;
+    font-size: 22px;
+    z-index: 4;
+}
+
+
+
+.dropdown-home-container
+{
+    position: relative;
+    display: inline-block;
+    background-color: grey;
+   
+width: 100px;
+height: 200px;
+z-index: 3;
+}
+
+.dropdown-home-content
+{
+position: absolute;
+display: none;
+color: white;
+z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+.maincontent /* This is the Div for the content of the main page */
+{
+
+    background: rgb(55,55,56);
+    color: white;
+    border: 2px solid rgb(59, 59, 59);
+    background: linear-gradient(0deg, rgba(55,55,56,1) 0%, rgba(34,34,34,1) 41%, rgba(45,46,46,1) 70%);
+   min-height: 600px;
+}
+
+.maincontent h1
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer /* This is the Div for the bottom portion of the page */
+{
+    background-color: rgb(71, 71, 71);
+    border-top: 1px solid rgb(24, 24, 24);
+}
